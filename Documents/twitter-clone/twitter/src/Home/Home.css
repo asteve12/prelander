@@ -179,7 +179,7 @@
   padding: 3%;
 
   border-radius: 30px;
-  display: flex;
+  display: none;
   margin-bottom: 1%;
   align-items: center;
   cursor: pointer;
@@ -370,7 +370,7 @@
   color: rgba(29, 161, 242, 1);
 }
 
-#gif-icon-container {
+#gif-icon-container-modal {
   margin: 5px;
   cursor: pointer;
   color: rgba(29, 161, 242, 1);
@@ -956,4 +956,44 @@
   width: 300px;
   position: absolute;
   bottom: 90px;
+}
+
+/*********** more icon invisible container***************/
+.more-invisible-container {
+  display: none;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  box-shadow: 0px 0px 5px 2px rgb(225, 219, 219);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+}
+.more-invisible-container a {
+  width: 100%;
+  display: flex;
+
+  text-decoration: none;
+  color: black;
+  padding: 5%;
+
+  align-items: center;
+}
+.more-invisible-container a:hover {
+  background-color: rgb(243, 243, 243);
+}
+#invisible-more-icon-horizontal-rule {
+  width: 100%;
+  background-color: grey;
+  height: 0.2%;
+  position: absolute;
+  top: 55%;
+}
+
+#topic-icon {
+  padding-left: 5%;
+  padding-right: 5%;
 }

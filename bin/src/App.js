@@ -1,6 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
-import Radium, { StyleRoot } from 'radium';
+import style from './App.css';
+
 import React from 'react';
 
 class App extends React.Component {
@@ -31,17 +31,11 @@ class App extends React.Component {
   render() {
     let styles = {
       backgroundColor: 'red',
-      ':hover': {
-        backgroundColor: 'blue',
-      },
-      '@media(max-width:450px)': {
-        backgroundColor: 'green',
-      },
     };
     return (
-      <StyleRoot>
+      <>
         <div>
-          <div>{this.state.person[0].name}</div>
+          <div className={style.redder}>{this.state.person[0].name}</div>
 
           <button
             style={styles}
@@ -50,9 +44,9 @@ class App extends React.Component {
             switch
           </button>
         </div>
-      </StyleRoot>
+      </>
     );
   }
 }
 
-export default Radium(App);
+export default App;

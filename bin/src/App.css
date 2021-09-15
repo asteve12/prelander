@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+.redder {
+  background-color: orange;
+  width: 200px;
+  height: 100px;
+}
 
 .App-logo {
   height: 40vmin;
